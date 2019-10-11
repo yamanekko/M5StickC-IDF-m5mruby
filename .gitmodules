@@ -4,3 +4,6 @@
 [submodule "components/m5stickc"]
 	path = components/m5stickc
 	url = https://github.com/m5stack/M5StickC.git
+[submodule "components/m5mruby"]
+	path = components/m5mruby
+	url = https://github.com/yamanekko/m5mruby.git
