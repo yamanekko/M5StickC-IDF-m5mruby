@@ -3,6 +3,8 @@
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 #include <M5StickC.h>
+#include "mruby.h"
+#include "mruby/compile.h"
 
 void setup() {
     Serial.begin(115200);
@@ -28,6 +30,10 @@ void setup() {
 
     // LCD display
     M5.Lcd.print("Hello World");
+
+    mrb_state *mrb = mrb_open();
+    mrb_load_string(mrb, "p 'Hello, World!!'");
+    mrb_close(mrb);
 }
 
 void loop() {
