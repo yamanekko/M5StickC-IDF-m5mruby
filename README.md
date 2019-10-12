@@ -9,7 +9,9 @@ This is a M5StickC version of [M5Stack-IDF](https://github.com/m5stack/M5Stack-I
 * Create template idf project
 
 ```
-$ git clone --recursive https://github.com/yamanekko/M5StickC-IDF-m5mruby.git
+$ git clone https://github.com/yamanekko/M5StickC-IDF-m5mruby.git
+$ cd M5StickC-IDF-m5mruby
+$ git submodule update --init --recursive --recommend-shallow --depth 5
 ```
 
 ## Build and Execution
