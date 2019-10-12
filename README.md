@@ -51,10 +51,13 @@ E (521) boot: Factory app partition is not bootable
 E (526) boot: No bootable app partitions in the partition table
 ```
 
-It's partitions issue. Use partitions.bin in this repo.
+It's partitions issue. Use partitions.csv in this repo.
 
 ```
-## flash partition table
+## build bootloader, application and partitions
+$ idf.py build
+
+## transfer partition table data (build/partition_table/partition-table.bin) into flash
 $ idf.py -b 115200 partition_table-flash
 
 ## then flash and monitor
