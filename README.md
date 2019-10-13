@@ -4,8 +4,15 @@ This is a M5StickC version of [M5Stack-IDF](https://github.com/m5stack/M5Stack-I
 
 ## Install
 
-* Download and install [esp-idf](https://github.com/espressif/esp-idf) of stable version and `idf.py`.
+* Download and install [esp-idf](https://github.com/espressif/esp-idf) of v3.2 and `idf.py`.
     * see [Get Started (CMake)](https://docs.espressif.com/projects/esp-idf/en/stable/get-started-cmake/index.html)
+
+* install CMake
+
+```
+brew install cmake
+```
+
 * Create template idf project
 
 ```
