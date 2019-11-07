@@ -35,7 +35,7 @@ void loop()
     mrb_value ret;
 
     try {
-        ret = mrb_load_irep(mrb, code);
+        ret = mrb_load_irep(mrb, ruby_code);
     } catch (...) {
         printf("load_irep error!!\n");
     }

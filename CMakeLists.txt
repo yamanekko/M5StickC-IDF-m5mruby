@@ -5,4 +5,4 @@ cmake_minimum_required(VERSION 3.5)
 add_compile_options(-DESP32)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(hello-world)
+project(M5StickC-mruby)
